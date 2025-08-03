@@ -34,6 +34,8 @@ body {
     color: var(--text-dark);
     background: var(--white);
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .scroll-container {
@@ -41,6 +43,10 @@ body {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* Ensure proper scroll-snap behavior */
+    scroll-padding: 0;
+    scroll-margin: 0;
 }
 
 section {
@@ -54,6 +60,11 @@ section {
     position: relative;
     overflow: hidden;
     flex-shrink: 0;
+    box-sizing: border-box;
+    /* Ensure proper scroll-snap behavior */
+    scroll-snap-stop: always;
+    /* Ensure proper containment for animations */
+    contain: layout style;
 }
 
 /* Typography */
@@ -1480,6 +1491,9 @@ section {
     z-index: 1;
     overflow: hidden;
     pointer-events: none;
+    isolation: isolate;
+    /* Ensure animation is contained within the gift section */
+    contain: layout style paint;
 }
 
 .flying-element {
@@ -1487,6 +1501,7 @@ section {
     font-size: 2rem;
     opacity: 0;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    will-change: transform;
 }
 
 /* Random directions and animations */
@@ -1959,9 +1974,9 @@ section {
         scroll-behavior: smooth;
     }
     
+    /* Remove transform that interferes with scroll-snap */
     section {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
+        /* Removed transform: translateZ(0) to fix scroll-snap issues */
     }
 }
 

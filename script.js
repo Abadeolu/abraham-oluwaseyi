@@ -312,6 +312,12 @@ function scrollToNextSection() {
             behavior: 'smooth',
             block: 'start'
         });
+        
+        // Update active menu item
+        const sectionId = nextElement.getAttribute('id');
+        if (sectionId) {
+            updateActiveMenuItem(sectionId);
+        }
     }
 }
 
@@ -326,6 +332,14 @@ function scrollToSection(sectionId) {
         
         // Update active menu item
         updateActiveMenuItem(sectionId);
+        
+        // Ensure proper scroll-snap behavior
+        setTimeout(() => {
+            const scrollContainer = document.querySelector('.scroll-container');
+            if (scrollContainer) {
+                scrollContainer.scrollTop = section.offsetTop;
+            }
+        }, 100);
     }
 }
 
@@ -350,7 +364,8 @@ function updateActiveMenuItem(sectionId) {
 // Update active menu item on scroll
 function updateMenuOnScroll() {
     const sections = document.querySelectorAll('section[id]');
-    const scrollPosition = window.scrollY + 100;
+    const scrollContainer = document.querySelector('.scroll-container');
+    const scrollPosition = scrollContainer ? scrollContainer.scrollTop + 100 : window.scrollY + 100;
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
@@ -363,8 +378,16 @@ function updateMenuOnScroll() {
     });
 }
 
-// Add scroll event listener
+// Add scroll event listeners
 document.addEventListener('scroll', updateMenuOnScroll);
+
+// Also listen to scroll container specifically
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollContainer = document.querySelector('.scroll-container');
+    if (scrollContainer) {
+        scrollContainer.addEventListener('scroll', updateMenuOnScroll);
+    }
+});
 
 // Copy account number function for gift section
 function copyAccountNumber() {
