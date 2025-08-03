@@ -10,14 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
-
-      - name: Upload to FTP
-        uses: SebastianRiedel/ftp-action@v1.0.0
         with:
-          host: "${{ secrets.FTP_SERVER }}"
-          user: "${{ secrets.FTP_USERNAME }}"
+          fetch-depth: 0
+
+      - name: Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        with:
+          server: "${{ secrets.FTP_SERVER }}"
+          username: "${{ secrets.FTP_USERNAME }}"
           password: "${{ secrets.FTP_PASSWORD }}"
-          localDir: "./"
-          remoteDir: "wedding.abadeolu.com"
+          protocol: ftp
+          port: 21
+          local-dir: ./   # Adjust if your files are in a folder like public/
+          server-dir: /wedding.abadeolu.com   # This is your subfolder on cPanel
+          dangerous-clean-slate: true   # Optional: clears remote dir before upload
