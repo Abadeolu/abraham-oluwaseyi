@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Upload to FTP
-        uses: sebastianruml/ftp-action@v1.2.0
+        uses: SebastianRiedel/ftp-action@v1.0.0
         with:
           host: "${{ secrets.FTP_SERVER }}"
           user: "${{ secrets.FTP_USERNAME }}"
           password: "${{ secrets.FTP_PASSWORD }}"
-          localDir: "./" # Adjust this if your site files are in a subfolder like ./public
-          remoteDir: "wedding.abadeolu.com"  # 👈 this is your correct subfolder
+          localDir: "./"
+          remoteDir: "wedding.abadeolu.com"
