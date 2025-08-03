@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#9ACD32">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <title>Abraham & Oluwaseyi - Wedding</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts - Modern Selection -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Side Menu -->
+    <div class="side-menu">
+        <div class="menu-item" onclick="scrollToSection('home')">
+            <i class="bi bi-house"></i>
+            <span class="menu-text">Home</span>
+        </div>
+        <div class="menu-item" onclick="scrollToSection('big-day')">
+            <i class="bi bi-calendar-heart"></i>
+            <span class="menu-text">Big Day</span>
+        </div>
+        <div class="menu-item" onclick="scrollToSection('our-story')">
+            <i class="bi bi-heart"></i>
+            <span class="menu-text">Our Story</span>
+        </div>
+        <div class="menu-item" onclick="scrollToSection('gallery')">
+            <i class="bi bi-images"></i>
+            <span class="menu-text">Gallery</span>
+        </div>
+        <div class="menu-item" onclick="scrollToSection('dress-code')">
+            <i class="bi bi-palette"></i>
+            <span class="menu-text">Dress Code</span>
+        </div>
+        <div class="menu-item" onclick="scrollToSection('gift')">
+            <i class="bi bi-gift"></i>
+            <span class="menu-text">Gift</span>
+        </div>
+        <div class="menu-item rsvp-item" onclick="openRSVP()">
+            <i class="bi bi-calendar-check"></i>
+            <span class="menu-text">RSVP</span>
+        </div>
+    </div>
+
+    <div class="scroll-container">
+        <!-- Hero Section -->
+        <section id="home" class="position-relative">
+        <div class="position-absolute w-100 h-100" style="background-image: url('images/hero-bg.svg'); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 1;"></div>
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper text-center text-white">
+            <div class="fade-in-up">
+                <h1 class="hero-title font-playfair">Abraham & Oluwaseyi</h1>
+                <p class="section-subtitle font-inter">We're getting married</p>
+                <p class="section-text mb-4">October 18, 2025 • Lagos, Nigeria</p>
+                <button class="btn btn-modern" onclick="scrollToNextSection()">More Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Big Day Section -->
+    <section id="big-day" class="position-relative">
+        <div class="position-absolute w-100 h-100" style="background-image: url('images/wedding-info-bg.svg'); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 1;"></div>
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper text-center text-white">
+            <div class="fade-in-up">
+                <h2 class="section-title font-playfair mb-5">The Big Day</h2>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card modern-card h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-calendar-event info-icon mb-3"></i>
+                                <h5 class="card-title font-playfair">Date</h5>
+                                <p class="card-text">October 18, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card modern-card h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-clock info-icon mb-3"></i>
+                                <h5 class="card-title font-playfair">Time</h5>
+                                <p class="card-text">Engagement: 9:00 AM<br>White Wedding: 11:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card modern-card h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-geo-alt info-icon mb-3"></i>
+                                <h5 class="card-title font-playfair">Venue</h5>
+                                <p class="card-text">Nikoms Event Centre<br>Yaba, Lagos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card modern-card h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-cup-straw info-icon mb-3"></i>
+                                <h5 class="card-title font-playfair">Reception</h5>
+                                <p class="card-text">Immediately After<br>Same Venue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <a href="https://forms.gle/Pi9SZ1azc9dqhJNL7" target="_blank" class="btn btn-modern me-3">
+                        <i class="bi bi-calendar-check me-2"></i>
+                        RSVP Now
+                    </a>
+                    <button class="btn btn-modern" onclick="scrollToNextSection()">More Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Met Section -->
+    <section id="our-story" class="position-relative">
+        <div class="position-absolute w-100 h-100" style="background-image: url('images/our-story-bg.svg'); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 1;"></div>
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper text-center text-white">
+            <div class="fade-in-up">
+                <div class="story-container">
+                                            <h2 class="story-title font-playfair mb-5">Our Love Story</h2>
+                    
+                    <div class="story-content">
+                        <p class="story-text font-inter">
+                            Against the odds and through the whispers, we chose each other — every single time. 
+                            Built on faith, trust, and a whole lot of laughter, our journey has been a beautiful dance of sincerity, 
+                            sacrifice, and simple joys. We don’t just dream about forever — we live it one honest, hope-filled day at a time. 
+                            Through the highs and lows, we’ve learned that love isn’t always easy, but when it's real, it's always worth it.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-5 mb-5">
+                        <button class="btn btn-modern" onclick="scrollToNextSection()">More Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="position-relative">
+        <div class="position-absolute w-100 h-100" style="background-image: url('images/gallery-bg.svg'); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 1;"></div>
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper text-center text-white">
+            <div class="fade-in-up">
+                <h2 class="section-title font-playfair mb-5">Our Journey in Pictures</h2>
+                
+                <div class="gallery-container">
+                    <button class="gallery-nav gallery-prev" id="galleryPrev">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    
+                    <div class="gallery-slider" id="gallerySlider">
+                        <div class="gallery-item">
+                            <img src="images/gallery-1.svg" alt="Gallery Image 1" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-2.svg" alt="Gallery Image 2" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-3.svg" alt="Gallery Image 3" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-4.svg" alt="Gallery Image 4" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-5.svg" alt="Gallery Image 5" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-6.svg" alt="Gallery Image 6" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-7.svg" alt="Gallery Image 7" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-8.svg" alt="Gallery Image 8" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-9.svg" alt="Gallery Image 9" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-10.svg" alt="Gallery Image 10" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-11.svg" alt="Gallery Image 11" class="gallery-image">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery-12.svg" alt="Gallery Image 12" class="gallery-image">
+                        </div>
+                    </div>
+                    
+                    <button class="gallery-nav gallery-next" id="galleryNext">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="gallery-indicators mt-4">
+                    <span class="gallery-dot active" data-slide="0"></span>
+                    <span class="gallery-dot" data-slide="1"></span>
+                    <span class="gallery-dot" data-slide="2"></span>
+                    <span class="gallery-dot" data-slide="3"></span>
+                    <span class="gallery-dot" data-slide="4"></span>
+                    <span class="gallery-dot" data-slide="5"></span>
+                    <span class="gallery-dot" data-slide="6"></span>
+                    <span class="gallery-dot" data-slide="7"></span>
+                    <span class="gallery-dot" data-slide="8"></span>
+                    <span class="gallery-dot" data-slide="9"></span>
+                    <span class="gallery-dot" data-slide="10"></span>
+                    <span class="gallery-dot" data-slide="11"></span>
+                </div>
+                
+                <div class="mt-5">
+                    <button class="btn btn-modern" onclick="scrollToNextSection()">More Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            
+            <button class="modal-nav modal-prev" id="modalPrev">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            
+            <div class="modal-image-container">
+                <img src="" alt="Gallery Image" id="modalImage" class="modal-image">
+                <div class="modal-caption">
+                    <span id="modalCaption">Image 1 of 12</span>
+                </div>
+            </div>
+            
+            <button class="modal-nav modal-next" id="modalNext">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Dress Code Section -->
+    <section id="dress-code" class="position-relative">
+        <div class="position-absolute w-100 h-100" style="background-image: url('images/dress-code.svg'); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 1;"></div>
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper text-center">
+            <div class="fade-in-up">
+                <h2 class="story-title font-playfair mb-5 text-dark">Dress Code</h2>
+                
+                <div class="dress-code-container">
+                    <div class="row g-4 justify-content-center align-items-center">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="dress-code-card">
+                                        <div class="color-swatch emerald-green-pink mb-3"></div>
+                                        <h4 class="font-playfair text-dark mb-3">Ladies</h4>
+                                        <p class="dress-code-text font-inter">Please come stunning in Emerald Green or Pink hues.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="dress-code-card">
+                                        <div class="color-swatch emerald-green-white mb-3"></div>
+                                        <h4 class="font-playfair text-dark mb-3">Gentlemen</h4>
+                                        <p class="dress-code-text font-inter">White traditional attire with a dash of Emerald Green is perfect.</p>
+                                    </div>
+                                </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <div class="color-combination">
+                            <div class="color-swatch emerald-green-pink me-3"></div>
+                            <span class="font-inter text-white">+</span>
+                            <div class="color-swatch emerald-green-white ms-3"></div>
+                        </div>
+                        <p class="mt-3 font-inter text-white">Perfect Harmony</p>
+                    </div>
+                    
+                    <div class="mt-3 mb-5">
+                        <button class="btn btn-modern" onclick="scrollToNextSection()">More Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section id="gift" class="position-relative">
+        <div class="position-absolute w-100 h-100" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%); z-index: 1;"></div>
+        
+        <!-- Animated Flying Elements Background -->
+        <div class="flying-elements-bg">
+            <div class="flying-element flying-1">🎁</div>
+            <div class="flying-element flying-2">❤️</div>
+            <div class="flying-element flying-3">😊</div>
+            <div class="flying-element flying-4">🎉</div>
+            <div class="flying-element flying-5">💕</div>
+            <div class="flying-element flying-6">😍</div>
+            <div class="flying-element flying-7">🎁</div>
+            <div class="flying-element flying-8">💖</div>
+            <div class="flying-element flying-9">😄</div>
+            <div class="flying-element flying-10">💝</div>
+            <div class="flying-element flying-11">🥰</div>
+            <div class="flying-element flying-12">🎊</div>
+            <div class="flying-element flying-13">💗</div>
+            <div class="flying-element flying-14">😌</div>
+            <div class="flying-element flying-15">💓</div>
+            <div class="flying-element flying-16">🎁</div>
+            <div class="flying-element flying-17">💘</div>
+            <div class="flying-element flying-18">😋</div>
+            <div class="flying-element flying-19">💞</div>
+            <div class="flying-element flying-20">😇</div>
+            <div class="flying-element flying-21">🎈</div>
+            <div class="flying-element flying-22">💟</div>
+            <div class="flying-element flying-23">😃</div>
+            <div class="flying-element flying-24">💜</div>
+        </div>
+        
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper text-center text-white">
+            <div class="fade-in-up">
+                <h2 class="story-title font-playfair mb-4">Gift Us With Love</h2>
+                
+                <div class="gift-container">
+                    <p class="gift-intro font-inter mb-4">
+                        Your presence is the real gift, but if you'd like to bless us, here's how:
+                    </p>
+                    
+                    <div class="gift-card">
+                        <div class="bank-info">
+                            <h4 class="font-playfair mb-3">Bank Details</h4>
+                            
+                            <div class="account-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Bank:</span>
+                                    <span class="detail-value">GTBank</span>
+                                </div>
+                                
+                                <div class="detail-row">
+                                    <span class="detail-label">Name:</span>
+                                    <span class="detail-value">Alebiosu Oluwaseyi</span>
+                                </div>
+                                
+                                <div class="detail-row">
+                                    <span class="detail-label">Account Number:</span>
+                                    <span class="detail-value" id="accountNumber">0118023576
+                                    <button class="btn btn-copy ms-2" onclick="copyAccountNumber()">
+                                        <i class="bi bi-clipboard"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="gift-note mt-4">
+                                <p class="font-inter">
+                                    <i class="bi bi-heart-fill text-danger me-2"></i>
+                                    We ask that you kindly convert all physical gifts into cash.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 mb-4">
+                        <a href="https://forms.gle/Pi9SZ1azc9dqhJNL7" target="_blank" class="btn btn-modern">
+                            <i class="bi bi-calendar-check me-2"></i>
+                            RSVP Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 

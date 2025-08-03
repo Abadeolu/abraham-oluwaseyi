@@ -1,0 +1,23 @@
+IMAGES FOLDER
+
+This folder is for storing all wedding website images.
+
+CURRENTLY NEEDED:
+- hero-bg.jpg (Hero section background)
+
+FUTURE IMAGES NEEDED:
+- wedding-info-bg.jpg
+- story-bg.jpg  
+- couple-bg.jpg
+- gallery-bg.jpg
+- dress-code-bg.jpg
+- gifts-bg.jpg
+- footer-bg.jpg
+- abraham-profile.jpg
+- oluwaseyi-profile.jpg
+- gallery-1.jpg through gallery-12.jpg
+
+Please add your images to this folder and update the HTML file accordingly.
+
+For now, you can use any romantic/wedding-themed image for hero-bg.jpg
+or the website will show a broken image until you add one. 
