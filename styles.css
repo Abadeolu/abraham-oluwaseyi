@@ -254,37 +254,52 @@ section {
     /* Mobile-specific background images */
     section#home .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#big-day .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#our-story .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#gallery .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#dress-code .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
 }
 
@@ -317,37 +332,52 @@ section {
     /* Mobile-specific background images for medium mobile */
     section#home .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#big-day .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#our-story .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#gallery .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#dress-code .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
 }
 
@@ -2352,37 +2382,52 @@ section {
     /* Mobile-specific background images for small mobile */
     section#home .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#big-day .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#our-story .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#gallery .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#dress-code .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
 }
 
@@ -2451,37 +2496,52 @@ section {
     /* Mobile-specific background images for very small mobile */
     section#home .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#big-day .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#our-story .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#gallery .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
     
     section#dress-code .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
-        background-size: cover !important;
+        background-size: 100% 100% !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        height: 100vh !important;
     }
 }
 
