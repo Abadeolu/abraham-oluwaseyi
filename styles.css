@@ -173,75 +173,118 @@ section {
 @media (max-width: 575.98px) {
     .content-wrapper {
         padding: 0 0.5rem;
-        margin-top: 10vh;
+        margin-top: 0;
     }
     
     .hero-title {
-        font-size: clamp(2rem, 6vw, 3rem);
-        margin-bottom: 1rem;
-    }
-    
-    .section-title {
-        font-size: clamp(1.8rem, 5vw, 2.5rem);
-        margin-bottom: 1.5rem;
-    }
-    
-    .section-subtitle {
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        font-size: clamp(1.6rem, 4.5vw, 2.2rem);
         margin-bottom: 0.8rem;
     }
     
+    .section-title {
+        font-size: clamp(1.6rem, 4.5vw, 2.2rem) !important;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: clamp(0.8rem, 2.2vw, 0.95rem);
+        margin-bottom: 0.5rem;
+    }
+    
     .section-text {
-        font-size: clamp(0.9rem, 2.2vw, 1.1rem);
-        line-height: 1.6;
+        font-size: clamp(0.85rem, 2.1vw, 1rem) !important;
+        line-height: 1.4;
+        margin-bottom: 0.6rem;
     }
     
     .btn-modern {
-        padding: 0.8rem 2rem;
-        font-size: 0.9rem;
-        letter-spacing: 0.5px;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.3px;
     }
     
     .story-container {
-        margin-top: 10vh;
-        padding: 0 0.5rem;
+        margin-top: 0;
+        padding: 0 0.3rem;
     }
     
     .story-title {
-        font-size: clamp(2rem, 6vw, 3rem);
-        margin-bottom: 3rem;
+        font-size: clamp(1.6rem, 4.5vw, 2.2rem) !important;
+        margin-bottom: 1rem;
     }
     
     .story-content {
-        padding: 1.5rem;
+        padding: 0.6rem;
     }
     
     .story-text {
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
-        line-height: 1.7;
+        font-size: clamp(0.85rem, 2.1vw, 1rem) !important;
+        line-height: 1.4;
+        margin-bottom: 0.6rem;
     }
     
     .profile-image-container {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0.4rem;
     }
     
     .profile-name {
-        font-size: clamp(1.5rem, 4vw, 2rem);
+        font-size: clamp(1rem, 2.8vw, 1.3rem);
+        margin-bottom: 0.3rem;
     }
     
     .profile-bio {
-        font-size: clamp(0.9rem, 2.2vw, 1rem);
-        max-width: 250px;
+        font-size: clamp(0.7rem, 2vw, 0.85rem);
+        max-width: 200px;
+        line-height: 1.3;
+        margin-bottom: 0.4rem;
     }
     
     .social-icon {
-        width: 40px;
-        height: 40px;
+        width: 28px;
+        height: 28px;
+        margin: 0 0.15rem;
     }
     
     .social-icon i {
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+    
+    /* Mobile-specific background images */
+    section#home .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#big-day .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#our-story .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#gallery .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#dress-code .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 }
 
@@ -249,24 +292,62 @@ section {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .content-wrapper {
         padding: 0 1rem;
-        margin-top: 12vh;
+        margin-top: 0;
     }
     
     .hero-title {
-        font-size: clamp(2.5rem, 7vw, 4rem);
+        font-size: clamp(2rem, 5.5vw, 3rem);
+        margin-bottom: 1rem;
     }
     
     .section-title {
-        font-size: clamp(2rem, 5.5vw, 3rem);
+        font-size: clamp(2rem, 5.5vw, 3rem) !important;
+        margin-bottom: 1rem;
     }
     
     .story-container {
-        margin-top: 12vh;
+        margin-top: 0;
     }
     
     .profile-image-container {
-        width: 180px;
-        height: 180px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Mobile-specific background images for medium mobile */
+    section#home .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#big-day .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#our-story .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#gallery .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#dress-code .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 }
 
@@ -308,27 +389,31 @@ section {
 
 /* Landscape orientation adjustments for mobile */
 @media (max-width: 767.98px) and (orientation: landscape) {
+    .scroll-container {
+        padding-top: 0; /* Remove padding that was causing overlap */
+    }
+    
     .content-wrapper {
-        margin-top: 8vh;
+        margin-top: 0;
     }
     
     .story-container {
-        margin-top: 8vh;
+        margin-top: 0;
     }
     
     .hero-title {
-        font-size: clamp(2rem, 5vw, 3rem);
-        margin-bottom: 1rem;
+        font-size: clamp(1.4rem, 3.5vw, 2rem);
+        margin-bottom: 0.6rem;
     }
     
     .section-title {
-        font-size: clamp(1.8rem, 4.5vw, 2.5rem);
-        margin-bottom: 1rem;
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+        margin-bottom: 0.6rem;
     }
     
     .profile-image-container {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -942,101 +1027,140 @@ section {
 /* Responsive Modal */
 @media (max-width: 768px) {
     .modal-content {
-        width: 95%;
+        width: 85%;
         height: 80%;
+        margin: 0 auto;
+        border-radius: 12px;
     }
     
     .modal-nav {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        z-index: 1001;
     }
     
     .modal-prev {
-        left: -50px;
+        left: 10px;
     }
     
     .modal-next {
-        right: -50px;
+        right: 10px;
     }
     
     .modal-close {
-        top: -40px;
-        width: 35px;
-        height: 35px;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        z-index: 1001;
     }
     
     .modal-caption {
-        bottom: -35px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
         font-size: 1rem;
-        padding: 0.4rem 0.8rem;
+        padding: 0.6rem 1rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 8px;
     }
 }
 
 @media (max-width: 576px) {
     .modal-content {
-        width: 98%;
+        width: 88%;
         height: 75%;
+        margin: 0 auto;
+        border-radius: 10px;
     }
     
     .modal-nav {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        z-index: 1001;
     }
     
     .modal-prev {
-        left: -40px;
+        left: 8px;
     }
     
     .modal-next {
-        right: -40px;
+        right: 8px;
     }
     
     .modal-close {
-        top: -35px;
-        width: 30px;
-        height: 30px;
+        top: 8px;
+        right: 8px;
+        width: 35px;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        z-index: 1001;
     }
     
     .modal-caption {
-        bottom: -30px;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
         font-size: 0.9rem;
-        padding: 0.3rem 0.6rem;
+        padding: 0.5rem 0.8rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 6px;
     }
     
     .modal-nav i {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
     .modal-content {
-        width: 100%;
+        width: 90%;
         height: 70%;
+        margin: 0 auto;
+        border-radius: 8px;
     }
     
     .modal-nav {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        z-index: 1001;
     }
     
     .modal-prev {
-        left: -35px;
+        left: 5px;
     }
     
     .modal-next {
-        right: -35px;
+        right: 5px;
     }
     
     .modal-close {
-        top: -30px;
-        width: 25px;
-        height: 25px;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        z-index: 1001;
     }
     
     .modal-caption {
-        bottom: -25px;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
         font-size: 0.8rem;
-        padding: 0.2rem 0.5rem;
+        padding: 0.4rem 0.6rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
     }
     
     .modal-nav i {
@@ -1076,6 +1200,12 @@ section {
     box-shadow: var(--shadow-medium);
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .dress-code-card:hover {
@@ -1166,6 +1296,7 @@ section {
     .dress-code-card {
         padding: 1.5rem;
         margin-bottom: 1rem;
+        min-height: 180px;
     }
     
     .color-swatch {
@@ -1179,7 +1310,7 @@ section {
     }
     
     .dress-code-text {
-        font-size: 1rem;
+        font-size: clamp(0.85rem, 2.1vw, 1rem) !important;
     }
     
     .color-combination span {
@@ -1194,6 +1325,7 @@ section {
     
     .dress-code-card {
         padding: 1rem;
+        min-height: 160px;
     }
     
     .color-swatch {
@@ -1207,7 +1339,7 @@ section {
     }
     
     .dress-code-text {
-        font-size: 0.9rem;
+        font-size: clamp(0.75rem, 1.8vw, 0.9rem) !important;
     }
     
     .color-combination span {
@@ -1226,6 +1358,7 @@ section {
     
     .dress-code-card {
         padding: 0.8rem;
+        min-height: 140px;
     }
     
     .color-swatch {
@@ -1239,7 +1372,7 @@ section {
     }
     
     .dress-code-text {
-        font-size: 0.85rem;
+        font-size: clamp(0.65rem, 1.6vw, 0.8rem) !important;
     }
     
     .color-combination span {
@@ -1366,7 +1499,7 @@ section {
     }
     
     .gift-intro {
-        font-size: 1rem;
+        font-size: clamp(0.85rem, 2.1vw, 1rem) !important;
     }
     
     .bank-info h4 {
@@ -1451,7 +1584,7 @@ section {
     }
     
     .gift-intro {
-        font-size: 0.9rem;
+        font-size: clamp(0.75rem, 1.8vw, 0.9rem) !important;
     }
     
     .detail-row {
@@ -1846,17 +1979,17 @@ section {
     transform: scale(1.1);
 }
 
-/* Responsive adjustments for side menu */
-@media (max-width: 768px) {
+/* Responsive adjustments for side menu - keeping consistent across all screen sizes */
+@media (max-width: 1200px) {
     .side-menu {
-        left: 10px;
-        padding: 0.8rem 0.4rem;
-        gap: 0.4rem;
+        left: 15px;
+        padding: 0.9rem 0.6rem;
+        gap: 0.5rem;
     }
     
     .menu-item {
         padding: 0.5rem;
-        min-width: 45px;
+        min-width: 48px;
     }
     
     .menu-item i {
@@ -1864,23 +1997,66 @@ section {
     }
     
     .menu-text {
+        font-size: 0.68rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .side-menu {
+        left: 12px;
+        padding: 0.8rem 0.5rem;
+        gap: 0.45rem;
+    }
+    
+    .menu-item {
+        padding: 0.45rem;
+        min-width: 46px;
+    }
+    
+    .menu-item i {
+        font-size: 1rem;
+    }
+    
+    .menu-text {
         font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-menu {
+        left: 10px;
+        padding: 0.7rem 0.4rem;
+        gap: 0.4rem;
+    }
+    
+    .menu-item {
+        padding: 0.4rem;
+        min-width: 44px;
+    }
+    
+    .menu-item i {
+        font-size: 0.95rem;
+    }
+    
+    .menu-text {
+        font-size: 0.62rem;
     }
 }
 
 @media (max-width: 576px) {
     .side-menu {
-        left: 5px;
+        left: 8px;
         padding: 0.6rem 0.3rem;
+        gap: 0.35rem;
     }
     
     .menu-item {
-        padding: 0.4rem;
-        min-width: 40px;
+        padding: 0.35rem;
+        min-width: 42px;
     }
     
     .menu-item i {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .menu-text {
@@ -1890,18 +2066,39 @@ section {
 
 @media (max-width: 480px) {
     .side-menu {
-        left: 3px;
-        padding: 0.5rem 0.2rem;
+        left: 6px;
+        padding: 0.5rem 0.25rem;
         gap: 0.3rem;
     }
     
     .menu-item {
         padding: 0.3rem;
-        min-width: 35px;
+        min-width: 40px;
     }
     
     .menu-item i {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+    }
+    
+    .menu-text {
+        font-size: 0.58rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .side-menu {
+        left: 4px;
+        padding: 0.4rem 0.2rem;
+        gap: 0.25rem;
+    }
+    
+    .menu-item {
+        padding: 0.25rem;
+        min-width: 38px;
+    }
+    
+    .menu-item i {
+        font-size: 0.8rem;
     }
     
     .menu-text {
@@ -1909,32 +2106,64 @@ section {
     }
 }
 
-/* Hide side menu on very small screens */
-@media (max-width: 360px) {
-    .side-menu {
-        display: none;
-    }
-}
-
-/* Landscape orientation adjustments for side menu */
+/* Landscape orientation adjustments - keep side menu consistent */
 @media (max-width: 767.98px) and (orientation: landscape) {
     .side-menu {
-        left: 5px;
+        left: 8px;
         padding: 0.5rem 0.3rem;
         gap: 0.3rem;
     }
     
     .menu-item {
         padding: 0.3rem;
-        min-width: 35px;
+        min-width: 40px;
     }
     
     .menu-item i {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     
     .menu-text {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
+    }
+    
+    /* Optimize content for landscape orientation */
+    .content-wrapper {
+        max-height: 100vh;
+        padding: 0.8rem 0.3rem;
+        margin-top: 0;
+    }
+    
+    .section-title {
+        font-size: clamp(1.6rem, 4.5vw, 2.2rem) !important;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: clamp(0.75rem, 2vw, 0.9rem);
+        margin-bottom: 0.4rem;
+    }
+    
+    .section-text {
+        font-size: clamp(0.65rem, 1.8vw, 0.8rem);
+        line-height: 1.3;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Reduce card spacing in landscape */
+    .modern-card {
+        padding: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .modern-card .card-title {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .modern-card .card-text {
+        font-size: 0.65rem;
+        line-height: 1.2;
     }
 }
 
@@ -1972,11 +2201,20 @@ section {
     .scroll-container {
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
+        /* Remove padding-top that was causing overlap */
     }
     
-    /* Remove transform that interferes with scroll-snap */
+    /* Ensure sections maintain proper height and positioning */
     section {
-        /* Removed transform: translateZ(0) to fix scroll-snap issues */
+        height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
 }
 
@@ -1991,6 +2229,20 @@ section {
         text-rendering: optimizeLegibility;
         -webkit-font-feature-settings: "kern" 1;
         font-feature-settings: "kern" 1;
+    }
+    
+    /* Ensure content fits within viewport without scrolling */
+    .content-wrapper {
+        max-height: 100vh;
+        overflow: visible;
+        padding: 1.5rem 1rem;
+        margin-top: 0;
+    }
+    
+    /* Optimize section spacing for mobile */
+    .fade-in-up {
+        max-width: 100%;
+        padding: 0 0.5rem;
     }
 }
 
@@ -2031,6 +2283,205 @@ section {
     
     .flying-element {
         will-change: transform, opacity;
+    }
+}
+
+/* Additional mobile optimizations for smaller screens */
+@media (max-width: 576px) {
+    .content-wrapper {
+        max-height: 100vh;
+        padding: 1rem 0.5rem;
+        margin-top: 0;
+    }
+    
+    .section-title {
+        font-size: clamp(2rem, 5.5vw, 3rem) !important;
+        margin-bottom: 1rem;
+    }
+    
+    .section-subtitle {
+        font-size: clamp(0.85rem, 2.2vw, 1rem);
+        margin-bottom: 0.6rem;
+    }
+    
+    .section-text {
+        font-size: clamp(0.75rem, 1.8vw, 0.9rem) !important;
+        line-height: 1.3;
+        margin-bottom: 0.5rem;
+    }
+    
+    .story-text {
+        font-size: clamp(0.75rem, 1.8vw, 0.9rem) !important;
+        line-height: 1.3;
+        margin-bottom: 0.5rem;
+    }
+    
+    .btn-modern {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Reduce spacing for cards and other elements */
+    .modern-card {
+        padding: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .modern-card .card-title {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .modern-card .card-text {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+    
+    /* Specific styling for Big Day section cards on mobile */
+    .modern-card .info-icon {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    /* Reduce gap between cards on mobile */
+    .row.g-4 {
+        --bs-gutter-x: 0.75rem;
+        --bs-gutter-y: 0.75rem;
+    }
+    
+    /* Mobile-specific background images for small mobile */
+    section#home .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#big-day .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#our-story .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#gallery .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#dress-code .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        max-height: 100vh;
+        padding: 0.8rem 0.3rem;
+        margin-top: 0;
+    }
+    
+    .section-title {
+        font-size: clamp(1.6rem, 4.5vw, 2.2rem) !important;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: clamp(0.75rem, 2vw, 0.9rem);
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-text {
+        font-size: clamp(0.65rem, 1.6vw, 0.8rem) !important;
+        line-height: 1.3;
+        margin-bottom: 0.4rem;
+    }
+    
+    .story-text {
+        font-size: clamp(0.65rem, 1.6vw, 0.8rem) !important;
+        line-height: 1.3;
+        margin-bottom: 0.4rem;
+    }
+    
+    .btn-modern {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Further reduce spacing for very small screens */
+    .modern-card {
+        padding: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .modern-card .card-title {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .modern-card .card-text {
+        font-size: 0.65rem;
+        line-height: 1.1;
+    }
+    
+    /* Specific styling for Big Day section cards on very small screens */
+    .modern-card .info-icon {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    /* Reduce gap between cards on very small screens */
+    .row.g-4 {
+        --bs-gutter-x: 0.5rem;
+        --bs-gutter-y: 0.5rem;
+    }
+    
+    /* Mobile-specific background images for very small mobile */
+    section#home .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#big-day .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/wedding-info-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#our-story .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/our-story-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#gallery .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/gallery-bg.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    section#dress-code .position-absolute.w-100.h-100 {
+        background-image: url('images/mobile-screen/mobile-hero-bg/dress-code.svg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
     }
 }
 
