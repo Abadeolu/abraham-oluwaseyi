@@ -251,6 +251,24 @@ section {
         font-size: 0.7rem;
     }
     
+    /* Move hero content down on mobile */
+    #home .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 25vh;
+    }
+    
+    /* Move other sections content down on mobile */
+    #big-day .content-wrapper,
+    #our-story .content-wrapper,
+    #gallery .content-wrapper,
+    #dress-code .content-wrapper,
+    #gift .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 20vh;
+    }
+    
     /* Mobile-specific background images */
     section#home .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
@@ -327,6 +345,24 @@ section {
     .profile-image-container {
         width: 120px;
         height: 120px;
+    }
+    
+    /* Move hero content down on mobile */
+    #home .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 25vh;
+    }
+    
+    /* Move other sections content down on mobile */
+    #big-day .content-wrapper,
+    #our-story .content-wrapper,
+    #gallery .content-wrapper,
+    #dress-code .content-wrapper,
+    #gift .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 20vh;
     }
     
     /* Mobile-specific background images for medium mobile */
@@ -722,9 +758,16 @@ section {
     text-decoration: none;
 }
 
-.social-icon i {
-    font-size: 1.2rem;
-}
+    .social-icon i {
+        font-size: 1.2rem;
+    }
+    
+    /* Move hero content down on mobile */
+    #home .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 25vh;
+    }
 
 /* Gallery Section Styles */
 .gallery-container {
@@ -2379,6 +2422,24 @@ section {
         --bs-gutter-y: 0.75rem;
     }
     
+    /* Move hero content down on mobile */
+    #home .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 25vh;
+    }
+    
+    /* Move other sections content down on mobile */
+    #big-day .content-wrapper,
+    #our-story .content-wrapper,
+    #gallery .content-wrapper,
+    #dress-code .content-wrapper,
+    #gift .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 20vh;
+    }
+    
     /* Mobile-specific background images for small mobile */
     section#home .position-absolute.w-100.h-100 {
         background-image: url('images/mobile-screen/mobile-hero-bg/hero-bg.svg') !important;
@@ -2491,6 +2552,24 @@ section {
     .row.g-4 {
         --bs-gutter-x: 0.5rem;
         --bs-gutter-y: 0.5rem;
+    }
+    
+    /* Move hero content down on mobile */
+    #home .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 25vh;
+    }
+    
+    /* Move other sections content down on mobile */
+    #big-day .content-wrapper,
+    #our-story .content-wrapper,
+    #gallery .content-wrapper,
+    #dress-code .content-wrapper,
+    #gift .content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 20vh;
     }
     
     /* Mobile-specific background images for very small mobile */
