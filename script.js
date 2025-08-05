@@ -333,6 +333,9 @@ function scrollToSection(sectionId) {
         // Update active menu item
         updateActiveMenuItem(sectionId);
         
+        // Close mobile menu if open
+        closeMobileMenu();
+        
         // Ensure proper scroll-snap behavior
         setTimeout(() => {
             const scrollContainer = document.querySelector('.scroll-container');
@@ -346,6 +349,9 @@ function scrollToSection(sectionId) {
 // Open RSVP form function
 function openRSVP() {
     window.open('https://forms.gle/Pi9SZ1azc9dqhJNL7', '_blank');
+    
+    // Close mobile menu if open
+    closeMobileMenu();
 }
 
 // Update active menu item
@@ -431,6 +437,36 @@ function copyAccountNumber() {
 }
 
 
+
+// Toggle mobile menu
+function toggleMobileMenu() {
+    const sideMenu = document.getElementById('sideMenu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    sideMenu.classList.toggle('mobile-open');
+    hamburger.classList.toggle('active');
+}
+
+// Close mobile menu when clicking on a menu item
+function closeMobileMenu() {
+    const sideMenu = document.getElementById('sideMenu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    sideMenu.classList.remove('mobile-open');
+    hamburger.classList.remove('active');
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const sideMenu = document.getElementById('sideMenu');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const hamburger = document.querySelector('.hamburger');
+    
+    if (!sideMenu.contains(event.target) && !mobileToggle.contains(event.target)) {
+        sideMenu.classList.remove('mobile-open');
+        hamburger.classList.remove('active');
+    }
+});
 
 // Export functions for use in other scripts if needed
 if (typeof module !== 'undefined' && module.exports) {

@@ -20,8 +20,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Mobile Hamburger Menu Button -->
+    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <!-- Floating Side Menu -->
-    <div class="side-menu">
+    <div class="side-menu" id="sideMenu">
         <div class="menu-item" onclick="scrollToSection('home')">
             <i class="bi bi-house"></i>
             <span class="menu-text">Home</span>
